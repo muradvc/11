@@ -2,35 +2,77 @@
   display: flex;
   gap: 20px;
 }
-.box{
+
+.box1 {
   background-color: rgb(0, 0, 0);
-  padding: 20px ;
+  padding: 20px;
   border-radius: 10px;
   color: white;
 }
+
+.box-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  padding: 10px;
+  box-shadow: 1px 2px 5px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.box:hover {
+  background-color: rgb(243, 3, 247);
+  padding: 10px;
+  box-shadow: 1px 2px 5px;
+  border-radius: 10px;
+  transform:scale(1.1);
+}
+
 @media screen and (max-width:576px) {
 
-  body{
+  body {
     background-color: aqua;
-  
+
   }
-  .box-abba{
+
+  .box-abba {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-   
+
     margin: 0 auto;
   }
 
-  
+  .box {
+    width: 50%;
+    background-color: rgb(6, 231, 54);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 5px;
+    border-radius: 10px;
+  }
+
+
 }
-@media  screen and (max-width:255px) {
- 
-  .box{
+
+@media screen and (max-width:255px) {
+
+  .box1 {
     width: 200px;
     height: 100px;
     font-size: 10px;
     background-color: rgb(255, 0, 208);
   }
-  
+
 }
